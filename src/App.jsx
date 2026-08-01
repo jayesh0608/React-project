@@ -32,7 +32,7 @@ function App() {
 
       <h3>Contact</h3>
 
-      <p>Email: jayeshshinde64@gmail.com</p>
+      <p>Email: jayeshshinde64@gmail.com.</p>
 
       <p>GitHub: https://github.com/jayesh0608</p>
     </div>
