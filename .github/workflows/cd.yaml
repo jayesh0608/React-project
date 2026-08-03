@@ -1,11 +1,9 @@
 name: React CD
 
 on:
-  workflow_run:
-    workflows: ["React CI"]
-    types:
-      - completed
-
+  push:
+    branches:
+      - feature/ci-cd
 jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
