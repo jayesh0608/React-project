@@ -1,16 +1,14 @@
 name: React CD
 
 on:
-  workflow_run:
-    workflows: ["React CI"]
-    types:
-      - completed
+  push:
+    branches:
+      - feature/ci-cd
 
 jobs:
   deploy:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
       - name: CD Pipeline Started
-        run: echo "CI passed. Deploying application..."
+        run: echo "CI completed successfully. Ready for deployment."
