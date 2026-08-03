@@ -1,0 +1,14 @@
+name: React CD
+
+on:
+  push:
+    branches:
+      - feature/ci-cd
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CD Pipeline Started
+        run: echo "CI completed successfully. Ready for deployment."
